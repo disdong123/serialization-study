@@ -1,13 +1,11 @@
 rootProject.name = "springboot-template"
 
 include(
-    "template-domain",
-    "template-infrastructure:jpa",
-    "template-infrastructure:exposed",
-    "template-infrastructure:feign",
-    "template-infrastructure:redis",
-    "template-common",
-    "template-server"
+    "serialization-domain",
+    "serialization-infrastructure:jpa",
+    "serialization-infrastructure:feign",
+    "serialization-common",
+    "serialization-server"
 )
 
 dependencyResolutionManagement {
