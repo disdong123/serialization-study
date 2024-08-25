@@ -1,0 +1,16 @@
+spring.config.activate.on-profile: default
+server:
+  servlet:
+    context-path: /api
+
+spring:
+  config:
+    import:
+      - domain.yaml
+
+springdoc:
+  swagger-ui:
+    path: /docs
+
+---
+spring.config.activate.on-profile: dev

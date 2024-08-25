@@ -1,0 +1,9 @@
+spring.config.activate.on-profile: default
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+---
+spring.config.activate.on-profile: dev
