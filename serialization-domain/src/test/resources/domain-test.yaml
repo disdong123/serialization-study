@@ -3,4 +3,3 @@ spring:
   config:
     import:
       - jpa-mysql.yaml
-      - redis.yaml

@@ -5,7 +5,8 @@ include(
     "serialization-infrastructure:jpa",
     "serialization-infrastructure:feign",
     "serialization-common",
-    "serialization-server"
+    "serialization-server",
+    "serialization-reactive-server"
 )
 
 dependencyResolutionManagement {

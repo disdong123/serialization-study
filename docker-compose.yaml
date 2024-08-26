@@ -1,6 +1,6 @@
 services:
   redis:
-    container_name: springboot_template_redis
+    container_name: serialization_study_redis
     image: redis:latest
     healthcheck:
       test: [ "CMD", "redis-cli", "ping" ]
@@ -8,21 +8,21 @@ services:
       timeout: 3s
       retries: 60
     networks:
-      - springboot-template
+      - serialization-study
   mysql:
-    container_name: springboot_template_mysql
+    container_name: serialization_study_mysql
     image: mysql:8
     ports:
       - '3307:3306'
     environment:
       TZ: 'Asia/Seoul'
-      MYSQL_DATABASE: springboot_template
+      MYSQL_DATABASE: serialization_study
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
     volumes:
       - ./infra/mysql/data:/var/lib/mysql
     networks:
-      - springboot-template
+      - serialization-study
 networks:
-  springboot-template:
-    name: springboot-template
+  serialization-study:
+    name: serialization-study
     driver: bridge

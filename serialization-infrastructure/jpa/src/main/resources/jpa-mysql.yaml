@@ -3,7 +3,7 @@ spring.config.activate.on-profile: default
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/springboot_template
+    url: jdbc:mysql://localhost:3307/serialization_study
     username: root
     password:
   jpa:
