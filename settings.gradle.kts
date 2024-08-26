@@ -4,6 +4,9 @@ include(
     "serialization-domain",
     "serialization-infrastructure:jpa",
     "serialization-infrastructure:feign",
+    "serialization-infrastructure:json",
+    "serialization-infrastructure:avro",
+    "serialization-infrastructure:protobuf",
     "serialization-common",
     "serialization-server",
     "serialization-reactive-server"
